@@ -1,0 +1,7 @@
+## Use the below command to generate certificate.
+
+keytool -genkey -keyalg RSA -alias assignment -keystore assignment.jks -storepass password -validity 365 -keysize 4096 -storetype pkcs12
+
+## Changed the properties file in spring boot to enable HTTPS for our REST apis and the data is securely transferred.
+## Install the SSL cert in the client machine
+## Redirecting unsafe request to HTTPS
